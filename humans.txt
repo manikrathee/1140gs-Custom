@@ -3,18 +3,16 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site: 
-  Twitter: 
-  Location: 
+  Manik Rathee
+  Site: www.manikrathee.com
+  Twitter: @manikrathee
+  Location: East Coast, USA
 
-/* THANKS */
-  Names (& URL): 
 
 /* SITE */
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
-  Software:
+  
   
 
                                     
