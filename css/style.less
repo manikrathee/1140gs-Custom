@@ -1,45 +1,44 @@
+/*! 1140GS Custom Framework - Built by Manik Rathee | @manikrathee | www.manikrathee.com */
+
+
 /*@import "import/reset";*/
 @import "import/normalize"; /* replaced reset */
 @import "import/1140";
 @import "import/core";
+@import "import/mixins";
 
 
-/* Highlight */
-::-moz-selection{ background: #333; color:#fff; text-shadow: none; }
-::selection { background:#333; color:#fff; text-shadow: none; }
-a:link { -webkit-tap-highlight-color: #333; }
+@import "styles/base";
 
 
+@media (max-width: 400px) {
+	@import "styles/mobile";
+}
 
+
+@media (min-width: 401px) {
+	@import "styles/tablet";
+}
+
+
+@media (min-width: 768px) {
+	@import "styles/small-desktop";
+}
+
+
+@media (min-width: 960px) {
+	@import "styles/desktop";
+}
 
 
 @media (min-width: 1200px) {
-	
-}
-
-				
-@media (max-width: 1200px) {
-	
-}
-
-	
-@media (max-device-width: 1024px) and (orientation: landscape) {
-
-}
-
-@media (max-device-width: 1024px) and (orientation: portrait) { 
-
-
-}
-
-@media handheld and (max-width: 480px),
-       screen and (max-device-width: 480px),
-       screen and (max-width: 600px) {
-
+	@import "styles/large-desktop";
 }
 
 
 .oldie{
 	@import "import/ie";
-
+	@import "styles/small-desktop";
+	@import "styles/desktop";
+	@import "styles/oldie";
 }
