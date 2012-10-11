@@ -2,7 +2,7 @@
 
 
 /*@import "import/reset";*/
-@import "import/normalize"; /* replaced reset */
+@import "import/normalize";
 @import "import/1140";
 @import "import/core";
 @import "import/mixins";
@@ -11,27 +11,27 @@
 @import "styles/base";
 
 
-@media (max-width: 400px) {
+@media screen and (max-width: 400px) {
 	@import "styles/mobile";
 }
 
 
-@media (min-width: 401px) {
+@media screen and (min-width: 401px) and (max-width: 767px) {
 	@import "styles/tablet";
 }
 
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 959px) {
 	@import "styles/small-desktop";
 }
 
 
-@media (min-width: 960px) {
+@media screen and (min-width: 960px) and (max-width: 1199px) {
 	@import "styles/desktop";
 }
 
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 	@import "styles/large-desktop";
 }
 
