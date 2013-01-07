@@ -5,9 +5,6 @@
 ::selection { background:#333; color:#fff; text-shadow: none; }
 a:link { -webkit-tap-highlight-color: #333; }
 
-/* 
-Retina Mixin Autocompiler
-.logo {
-  .at2x('/images/my_image.png', 200px, 100px);
+body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+    -webkit-backface-visibility: hidden;
 }
- */
