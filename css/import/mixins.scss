@@ -29,6 +29,15 @@
   -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
 }
 
+// Transition
+@mixin transition ($properties...) {
+  -webkit-transition: ($properties);
+  -moz-transition: ($properties);
+  -ms-transition: ($properties);
+  -o-transition: ($properties);
+  transition: ($properties);
+}
+
 // Border Radius
 @mixin radius($amount) {
   border-radius: $amount;
