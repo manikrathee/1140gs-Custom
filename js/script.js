@@ -1,7 +1,7 @@
 /*
  * scripts.js
  *
- * auto-concatenated jquery, modernizr and custom alternate files
+ * auto-concatenated jquery, symbolset and custom alternate files
  *
  */
 

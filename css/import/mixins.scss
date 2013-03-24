@@ -1,0 +1,60 @@
+/* Mixins */
+
+
+// Gradient
+@mixin transparent-gradient{
+  background-image: linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);
+  background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);
+  background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);
+  background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgba(0,0,0,0.1)), color-stop(1, rgba(255,255,255,0.1)) );
+}
+
+// Gradient
+@mixin gradient($from, $to) {
+  background-color: $from;
+  background-image: -moz-linear-gradient($from, $to);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
+  background-image: -webkit-linear-gradient($from, $to);
+  background-image: -o-linear-gradient($from, $to);
+}
+
+// Border Radius - Individual Corners
+@mixin radius-each($topleft: 0, $topright: 0, $bottomright: 0, $bottomleft: 0) {
+  border-top-left-radius: $topleft;
+  border-top-right-radius: $topright;
+  border-bottom-right-radius: $bottomright;
+  border-bottom-left-radius: $bottomleft;
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+}
+
+// Border Radius
+@mixin radius($amount) {
+  border-radius: $amount;
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+}
+
+/*  Image Replacement */
+@mixin ir { 
+	display: block; 
+	text-indent: -999em; 
+	overflow: hidden; 
+	background-repeat: no-repeat; 
+	text-align: left; 
+	direction: ltr; 
+}
+
+// Box Model
+@mixin box {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin size($width, $height, $radius: 0) {
+  width: $width;
+  height: $height;
+  border-radius: $radius;
+}

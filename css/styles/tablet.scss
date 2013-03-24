@@ -1,0 +1,28 @@
+/* iPads & Tablets (portrait and landscape) */
+
+@include ipad {
+    #main-nav{
+        li{
+            @include transparent-gradient;
+            border-bottom: 1px solid rgba(255,255,255,0.4),
+                            1px solid rgba(0,0,0,0.4);
+        }
+    }
+    .item-media{
+        .media-actions {
+            top: 10px;
+            a{
+                 font-size: 22px;   
+                 margin-right: 20px;
+            }
+        }
+    }
+}
+
+@include ipad-portrait{
+    
+}
+
+@include ipad-landscape{
+    
+}

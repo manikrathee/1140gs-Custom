@@ -1,0 +1,119 @@
+.color, a.color{
+    color: $color;
+    &.invert{
+        color: $white;
+        background: $color;
+    }
+    &.invert-alt{
+        color: $white;
+        background: $color;
+        @include transparent-gradient;
+    }
+    &#fluence-logo{
+        span{
+            background: $color;
+        }
+    }
+}
+.color-hover{
+    &:hover{
+        color: $color
+    }
+    &.invert{
+        &:hover{
+            background: $color;
+        }
+    }
+}
+@media (min-width: 769px) {
+    a.color:hover{
+        color: darken( $color, 10% )
+    }
+    #main-navigation #nav-dropdown ul li a{
+        &:hover{
+            background: $color;
+            color: $white;
+        }
+    }
+}
+.button.color{
+    background: $white;
+    color: $grey;
+    @media (min-width: 769px) {
+     &:hover{
+            background: $color;
+            color: $white;
+     }
+    }
+    
+        
+    &.dark{
+        background: $black;
+        color: $white;
+        @media (min-width: 769px) {
+         &:hover{
+            background: $color;
+            color: $white;
+         }
+        }
+    }
+    &.invert{
+        background: $color;
+        color: $white;
+        @media (min-width: 769px) {
+         &:hover{
+            background: $black;
+            color: $white;
+         }
+        }
+    }
+}
+#campaign{
+    .stats{
+        li{
+            color: $white;
+            background: $color;
+        }
+    }
+}
+@media (min-width: 769px) {
+    #sidebar-trigger{
+        &:hover{
+            color: $color;
+        }
+    }
+}
+@media (min-width: 769px) {
+    #now-playing{
+        #now-playing-actions{
+            li{
+                &:hover{
+                    background: none;
+                    color: $color;
+                }   
+            }
+        }
+        #info-drawer-trigger{
+            &:hover{
+                color: $color;
+            }
+        }
+    }
+    #river-list li{
+        &:hover{
+            background: $color;
+        }
+        &.active{
+            background: $color;
+        }
+    }
+    .track-actions, .track-controls{
+        li{
+            a{
+                &:hover{
+                    text-shadow: 0 1px 5px darken($color, 15%);
+                }
+            }
+        }
+    }
+}

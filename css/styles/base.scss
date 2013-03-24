@@ -1,0 +1,31 @@
+/* Base Styles */
+$white: rgba(255,255,255,1); /* #ffffff */
+$off-white: rgba(243,243,243,1); /* #f3f3f3 */
+$black: rgba(21,19,20,1); /* #151314 */
+$grey: rgba(136,136,136,1); /* #888888 */
+
+$prox:  "proxima-nova", helvetica, tahoma, verdana, sans-serif;
+$divider: 1px solid rgba(229,229,229,1); /* #E5E5E5 */
+$placeholder: darken($white, 45%);
+
+
+
+/* Highlight */
+::-moz-selection{ background: #333; color:#fff; text-shadow: none; }
+::selection { background:#333; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: none; }
+
+
+/*  Global Elements  */
+html, body{
+}
+body{
+    -webkit-backface-visibility: hidden;
+        /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+    text-rendering: optimizelegibility;
+
+    // HiDPI/Retina Media Query
+    @include hdpi {
+        background-image:  url('../img/');
+    }
+}

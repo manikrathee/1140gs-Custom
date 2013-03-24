@@ -1,0 +1,303 @@
+/* Mobile Styles */
+
+html, body{
+    // position: relative;
+    // overflow: hidden;
+    max-width: 100%;
+    &.track-details{
+        // overflow-y: visible;
+        .media-item-outer{
+            left: 0;
+            display: block;
+            #back-to-feed{
+                display: block;
+            }
+        }
+        #main-nav, #feed{
+            overflow: hidden;
+        }
+    }
+}
+body{
+    &.audition{
+        background-color: #373841;
+        #footer{
+            display: none;
+        }
+    }
+}
+
+
+
+#signup{
+    width: 90%;
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 40px;
+    h1{
+        font-size: 35px;
+    }
+}
+
+#onboarding{
+    #onboarding-fields{
+        width: 300px;
+    }
+}
+
+
+
+/* Feed */
+#main{
+    position: relative;
+}
+#sidebar{
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    @include box;
+    #logo{
+        @include size(35px, 35px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+#main-nav{
+    float: left;
+    width: 50px;
+}
+#feed{
+    float: left;
+    width: 84%;
+}
+.media-item-outer{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 200%;
+    z-index: 400;
+    overflow: hidden;
+    float: none;
+    background: rgba(67,68,79,0.7); /* $blue-grey @ 70% */
+    margin-left: 0;
+    width: 100%;
+    padding: 15px;
+}
+#media-item{
+    background: $white;
+    @include radius(8px);
+    padding-bottom: 50px;
+    -webkit-transition: left 0.55s ease-in-out;
+    -moz-transition: left 0.55s ease-in-out;
+    transition: left 0.55s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
+    -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+    .back-button{
+        display: block;
+    }
+}
+
+
+/* River */
+.fluence-score{
+    display: block;
+    width: 100%;
+}
+#river-list{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 0;
+    width: 100%;
+}
+#river-set{
+    padding-bottom: 100px;
+}
+.river-item{
+    &.remove-item{
+        .remove{
+            width: 30%;
+            padding: 45px 20px;
+            font-size: 20px;
+            background: #333;
+        }
+        .track-info{
+            width: 70%;
+        }
+    }
+}
+.remove{
+    float: left;
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.track-info{
+    width: 100%;
+    padding: 30px 10px;
+    opacity: 1;
+}
+#item-meta-data{
+    text-align: center;
+    margin-bottom: 15px;
+    .meta-divider{
+        display: block;
+        opacity: 0;
+    }
+}
+.item-media{
+    .media-actions{
+        margin-top: 20px;
+        a{
+            font-size: 22px;
+            margin-right: 20px;
+        }    
+    }
+}
+
+.item-media p.title{
+    font-size: 23px;
+    font-weight: 300;
+    margin: 8px 0;
+}
+
+#share-module{
+    a{
+        display: block;
+        opacity: 1;
+        width: 80%;
+        margin: 10px auto;
+        padding: 8px 0;
+        color: $white;
+        font-size: 15px;
+        // @include transparent-gradient;
+        background: #333;
+        background-image: linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);
+        background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);
+        background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);
+        background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);
+        background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);
+        background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, rgba(0,0,0,0.1)),
+            color-stop(1, rgba(255,255,255,0.1))
+        );
+        cursor: pointer;
+        outline: none;
+        border: 1px solid darken($black, 5%);
+        box-shadow: inset 0px 1px 1px 1px rgba(0, 0, 0, 0.2),
+                            0px 3px 0px 1px darken($black, 25%);
+        -webkit-transition: background-color 0.15s linear, box-shadow 0.15s linear;
+        -moz-transition: background-color 0.15s linear, box-shadow 0.15s linear;
+        transition: background-color 0.15s linear, box-shadow 0.15s linear;
+        &:active{
+            border: 1px solid $white;
+            -webkit-box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 1);
+            box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 1);
+        }
+    }
+}
+
+/* Profile */
+.profile-header{
+    h1{
+        text-align: center;
+    }
+    #profile-owner{
+        h1{
+            margin-top: 0;
+        }
+    }
+    #score-container{
+        width: 100%;
+        float: none;
+        #score{
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 80px;
+            span{
+                margin: 0;
+            }
+        }
+    }
+}
+.profile-avatar{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#user-private{
+    position: relative;
+    text-align: center;
+    padding: 50px 0;
+    .ss-icon{
+        position: relative;
+        left: auto;
+        opacity: 0.8;
+        margin-left: 0;
+        font-size: 50px;
+    }
+}
+.bar{
+    .module{
+        width: 95%;
+        margin: 0 auto 20px;
+    }
+}
+
+
+/* Submission */
+#submit-form{
+    overflow: hidden;
+    zoom: 1;
+    width: 90%;
+    margin: 0 auto;
+    input{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #submission-url{
+        width: 70%;
+    }
+    
+    #submit{
+        width: 25%;
+    }
+}
+.promoted-bar{
+    h2{
+        text-align: center;
+    }
+}
+#promoted-items{
+    li{
+        margin-bottom: 20px;
+    }
+}
+
+/* Intro Tutorial */
+.intro-tutorial{
+    .narrow{
+        display: block;
+        margin-top: 20px;
+    }
+    .wide{
+        display: none;
+    }
+}
+
+
+// #main-footer{
+//     nav{
+//         width: 100%;
+//         text-align: center;
+//         margin: 10px 0 15px 0;
+//         padding: 15px 0;
+//     }
+// }
