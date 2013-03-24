@@ -1,24 +1,2 @@
 /* Desktop Styles */
 /* min-width 960px */
-.fluence-score{
-    background: darken($blue-grey, 5%) url('../img/fluence-score-bg.png') repeat 0 0;
-        @include hdpi {
-            background-image:  url('../img/fluence-score-bg@2x.png');
-        }
-    &.youtube{
-        height: 440px;
-    }
-    &.soundcloud{
-        height: 305px;
-    }
-    &.left.quarter{
-        float: left;
-        width: 25%;
-    }
-}
-.item-media{
-    &.left.three-quarters{
-        float: left;
-        width: 75%;
-    }
-} 
