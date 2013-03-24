@@ -7,9 +7,15 @@
   $black: rgba(21,19,20,1); /* #151314 */
   $grey: rgba(136,136,136,1); /* #888888 */
 
-  // Type
-  $prox:  "proxima-nova", helvetica, tahoma, verdana, sans-serif;
-
+  // Base Type
+  $georgia: Georgia, Cambria, "Times New Roman", Times, serif;
+  $helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  $lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+  $monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+  // TypeKit
+  $proxima:  "proxima-nova", helvetica, tahoma, verdana, sans-serif;
+  
+  
   // Elements
   $divider: 1px solid rgba(229,229,229,1); /* #E5E5E5 */
 
@@ -22,9 +28,9 @@ a:link { -webkit-tap-highlight-color: none; }
 
 
 // Global Elements
-html, body{
+html, body {
 }
-body{
+body {
   -webkit-backface-visibility: hidden;
   /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
   text-rendering: optimizelegibility;
@@ -35,10 +41,15 @@ body{
   }
 }
 
-a{
+a {
   text-decoration: none;
   @include transition(color 0.25s linear);
-  &:hover{
+  &:hover {
 
   }
+}
+
+dl, menu, ol, ul {
+    margin: 0;
+    padding: 0;
 }
