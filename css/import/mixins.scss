@@ -62,8 +62,16 @@
   box-sizing: border-box;
 }
 
+// Size
 @mixin size($width, $height, $radius: 0) {
   width: $width;
   height: $height;
   border-radius: $radius;
+}
+
+// Ellipsis
+@mixin ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
