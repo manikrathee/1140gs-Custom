@@ -63,23 +63,26 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1378,
+				"buffer_size": 2128,
 				"line_ending": "Unix"
 			}
 		},
 		{
+			"contents": "",
 			"file": "css/style.less",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
-				"buffer_size": 887,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "css/styles/base.less",
+			"file": "css/import/mixins.scss",
 			"settings":
 			{
-				"buffer_size": 375,
+				"buffer_size": 2309,
 				"line_ending": "Unix"
 			}
 		},
@@ -87,8 +90,16 @@
 			"file": "js/script.js",
 			"settings":
 			{
-				"buffer_size": 224,
+				"buffer_size": 760,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Users/manikrathee/Dropbox/#Symlink/Frameworks/Foundation/css/import/mixins.scss",
+			"settings":
+			{
+				"buffer_size": 2309,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -124,6 +135,7 @@
 	},
 	"file_history":
 	[
+		"/Users/manikrathee/Dropbox/#Symlink/Frameworks/1140gs-Custom/css/styles/base.less",
 		"/opt/fluence/fluenceapp/website/templates/base/header.html",
 		"/opt/fluence/fluenceapp/static/css/style.css",
 		"/opt/fluence/fluenceweb/shell/static/tpl/SubmissionView.html",
@@ -196,7 +208,6 @@
 		"/Users/manikrathee/Downloads/PageScroller-LITE-1.0/index.html",
 		"/Users/manikrathee/Dropbox/#Symlink/RevSystems/usa-top-docs/htdocs/css/import/1140.less",
 		"/Users/manikrathee/Dropbox/#Symlink/Frameworks/1140gs-Custom/css/style.less",
-		"/Users/manikrathee/Dropbox/#Symlink/Frameworks/1140gs-Custom/css/styles/base.less",
 		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/global/nav.php",
 		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/css/import/api.less",
 		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/css/style.less",
@@ -450,7 +461,7 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 1378,
+						"buffer_size": 2128,
 						"regions":
 						{
 						},
@@ -484,7 +495,7 @@
 					"file": "css/style.less",
 					"settings":
 					{
-						"buffer_size": 887,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -507,26 +518,28 @@
 				},
 				{
 					"buffer": 2,
-					"file": "css/styles/base.less",
+					"file": "css/import/mixins.scss",
 					"settings":
 					{
-						"buffer_size": 375,
+						"buffer_size": 2309,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								375,
-								375
+								2060,
+								2060
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Less/LESS.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 963.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -534,7 +547,7 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -542,7 +555,7 @@
 					"file": "js/script.js",
 					"settings":
 					{
-						"buffer_size": 224,
+						"buffer_size": 760,
 						"regions":
 						{
 						},
@@ -559,6 +572,34 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/manikrathee/Dropbox/#Symlink/Frameworks/Foundation/css/import/mixins.scss",
+					"settings":
+					{
+						"buffer_size": 2309,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2309,
+								2309
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1079.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -625,6 +666,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"mix",
+				"css/import/mixins.scss"
+			],
 			[
 				"main.",
 				"static/js/libs/main.js"
