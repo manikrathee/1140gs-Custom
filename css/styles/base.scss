@@ -14,11 +14,20 @@
   $monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
   // TypeKit
   $proxima:  "proxima-nova", helvetica, tahoma, verdana, sans-serif;
-  
-  
+
+
   // Elements
   $divider: 1px solid rgba(229,229,229,1); /* #E5E5E5 */
 
+  // Symbolset
+  .ss-icon {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    -webkit-font-smoothing: antialiased;
+  }
 
 
 // Highlights

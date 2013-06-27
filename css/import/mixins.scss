@@ -2,7 +2,7 @@
 
 
 // Gradient
-@mixin transparent-gradient{
+@mixin transparent-gradient {
   background-image: linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);
   background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);
   background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.1) 0%, rgba(255,255,255,0.1) 100%);
@@ -26,7 +26,7 @@
   border-top-right-radius: $topright;
   border-bottom-right-radius: $bottomright;
   border-bottom-left-radius: $bottomleft;
-  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
 }
 
 // Transition
@@ -41,17 +41,17 @@
 // Border Radius
 @mixin radius($amount) {
   border-radius: $amount;
-  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; 
+  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
 }
 
-/*  Image Replacement */
-@mixin ir { 
-	display: block; 
-	text-indent: -999em; 
-	overflow: hidden; 
-	background-repeat: no-repeat; 
-	text-align: left; 
-	direction: ltr; 
+//  Image Replacement
+@mixin ir {
+	display: block;
+	text-indent: -999em;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
 }
 
 // Box Model
@@ -74,4 +74,26 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+//Text Wrap
+@mixin wrap-text {
+  white-space: normal;
+  overflow: visible;
+}
+
+// ClearFix
+@mixin clearfix {
+  zoom: 1;
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin antialias {
+  -webkit-font-smoothing: antialiased;
 }
