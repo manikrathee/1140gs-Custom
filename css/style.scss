@@ -1,5 +1,5 @@
 /*! Stylesheet built and maintained by Manik Rathee, @manikrathee / www.manikrathee.com */
- 
+
 @import "import/normalize";
 @import "import/1140";
 @import "import/core";
@@ -15,11 +15,11 @@
 @import "styles/base";
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	@import "styles/mobile";
 }
 
-@media (min-width: 769px){
+@media (min-width: 768px){
 	@import "styles/small-screen";
 }
 
