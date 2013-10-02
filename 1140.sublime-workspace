@@ -68,37 +68,18 @@
 			}
 		},
 		{
-			"contents": "",
-			"file": "css/style.less",
-			"file_size": -1,
-			"file_write_time": -1,
+			"file": "css/style.scss",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 727,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "css/import/mixins.scss",
+			"file": "css/styles/base.scss",
 			"settings":
 			{
-				"buffer_size": 2309,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "js/script.js",
-			"settings":
-			{
-				"buffer_size": 760,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/Users/manikrathee/Dropbox/#Symlink/Frameworks/Foundation/css/import/mixins.scss",
-			"settings":
-			{
-				"buffer_size": 2309,
+				"buffer_size": 1526,
 				"line_ending": "Unix"
 			}
 		}
@@ -135,6 +116,10 @@
 	},
 	"file_history":
 	[
+		"/Users/manikrathee/Dropbox/#Symlink/Frameworks/1140gs-Custom/js/script.js",
+		"/Users/manikrathee/Dropbox/#Symlink/Frameworks/Foundation/css/import/mixins.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/Frameworks/1140gs-Custom/css/import/mixins.scss",
+		"/Users/manikrathee/Dropbox/#Symlink/Frameworks/1140gs-Custom/css/style.less",
 		"/Users/manikrathee/Dropbox/#Symlink/Frameworks/1140gs-Custom/css/styles/base.less",
 		"/opt/fluence/fluenceapp/website/templates/base/header.html",
 		"/opt/fluence/fluenceapp/static/css/style.css",
@@ -207,7 +192,6 @@
 		"/Users/manikrathee/Dropbox/#Symlink/RevSystems/usa-top-docs/htdocs/js/libs/navbar2.js",
 		"/Users/manikrathee/Downloads/PageScroller-LITE-1.0/index.html",
 		"/Users/manikrathee/Dropbox/#Symlink/RevSystems/usa-top-docs/htdocs/css/import/1140.less",
-		"/Users/manikrathee/Dropbox/#Symlink/Frameworks/1140gs-Custom/css/style.less",
 		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/global/nav.php",
 		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/css/import/api.less",
 		"/Users/manikrathee/Dropbox/#Symlink/#ManikRathee/v5/#HTDOCS/css/style.less",
@@ -259,10 +243,7 @@
 		"/Users/manikrathee/Drive/#Fluence/Alpha/App/htdocs/static/css/style.scss",
 		"/Users/manikrathee/Drive/#Fluence/Alpha/App/htdocs/website/templates/artists.html",
 		"/Users/manikrathee/Drive/#Fluence/Alpha/App/htdocs/website/templates/settings.html",
-		"/Users/manikrathee/Drive/#Fluence/Alpha/App/htdocs/website/templates/profile.html",
-		"/Users/manikrathee/Drive/#Fluence/Alpha/App/htdocs/website/templates/onboard.html",
-		"/Users/manikrathee/Drive/#Fluence/Alpha/App/htdocs/website/templates/home.html",
-		"/Users/manikrathee/Drive/#Fluence/Alpha/App/htdocs/static/js/script-ck.js"
+		"/Users/manikrathee/Drive/#Fluence/Alpha/App/htdocs/website/templates/profile.html"
 	],
 	"find":
 	{
@@ -492,10 +473,10 @@
 			[
 				{
 					"buffer": 1,
-					"file": "css/style.less",
+					"file": "css/style.scss",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 727,
 						"regions":
 						{
 						},
@@ -508,7 +489,7 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Less/LESS.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -518,18 +499,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "css/import/mixins.scss",
+					"file": "css/styles/base.scss",
 					"settings":
 					{
-						"buffer_size": 2309,
+						"buffer_size": 1526,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2060,
-								2060
+								1137,
+								1137
 							]
 						],
 						"settings":
@@ -539,7 +520,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 963.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -547,63 +528,8 @@
 			]
 		},
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 3,
-					"file": "js/script.js",
-					"settings":
-					{
-						"buffer_size": 760,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/Users/manikrathee/Dropbox/#Symlink/Frameworks/Foundation/css/import/mixins.scss",
-					"settings":
-					{
-						"buffer_size": 2309,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2309,
-								2309
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1079.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
