@@ -5,11 +5,10 @@
  *
  */
 
-//@codekit-prepend "libs/jquery-1.7.1.min.js";
+//@codekit-prepend "libs/ss-social.js";
 
+// "libs/jquery-1.10.2.js";
 // "libs/ss-standard.js";
-// "libs/ss-social.js";
-
 
 var win   = $(window);
 var doc   = $(document);
